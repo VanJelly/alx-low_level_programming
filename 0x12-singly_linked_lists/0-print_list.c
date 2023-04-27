@@ -1,18 +1,16 @@
 #include "lists.h"
 
 /**
- * Function of print_list  - prints list.
- * parameter list
- * Return: struct (Structure)
+ * print_list - prints list.
+ * @h: param list
+ * Return: struct
  */
 
 size_t print_list(const list_t *h)
 {
-	//declaration
-	size_t list_node;
+	size_t l_node;
 
-	//loop
-	list_node = 0;
+	l_node = 0;
 	while (h != NULL)
 	{
 		if (h->str == NULL)
@@ -20,7 +18,7 @@ size_t print_list(const list_t *h)
 		else
 			printf("[%d] %s\n", h->len, h->str);
 		h = h->next;
-		list_node++;
+		l_node++;
 	}
-	return (list_node);
+	return (l_node);
 }
