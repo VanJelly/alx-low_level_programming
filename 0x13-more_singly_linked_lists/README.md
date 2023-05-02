@@ -3,5 +3,4 @@
 0-print list
 1-list int
 
-Its all about linked lists
-
+Its all bot linked lists
